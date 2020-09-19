@@ -1,6 +1,6 @@
 * {
   background-color: #f9f9f9 !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -42,19 +42,19 @@ body #menu-selector {
 }
 
 @-webkit-keyframes opener {
-  0% {
+  from {
     width: 0%;
   }
-  100% {
+  to {
     width: 20%;
   }
 }
 
 @keyframes opener {
-  0% {
+  from {
     width: 0%;
   }
-  100% {
+  to {
     width: 20%;
   }
 }
@@ -144,10 +144,6 @@ body #container-1 nav ul a li:hover {
 
 body #menu-selector:checked ~ #container-1 {
   display: block;
-  -webkit-animation-name: opener;
-          animation-name: opener;
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
   z-index: 100;
 }
 
@@ -163,7 +159,7 @@ body .card {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   border: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body .card .card-title {
@@ -182,14 +178,15 @@ body hr {
 }
 
 body .grado {
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 2.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #777777;
 }
 
-body i {
+body .fas {
   opacity: 70%;
+  margin-right: 5px;
 }
 
 body .card-img {
@@ -197,6 +194,12 @@ body .card-img {
   border: 4px solid #09aeac;
   border-radius: 300px;
   padding: 10px;
+}
+
+body .fab {
+  font-size: 3em;
+  margin: 5px 5px;
+  color: #031634;
 }
 
 body h2 {

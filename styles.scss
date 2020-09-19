@@ -1,6 +1,6 @@
 * {
     background-color: #f9f9f9 !important;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -32,10 +32,10 @@ body {
         display: none;
     }
     @keyframes opener {
-        0% {
+        from {
             width: 0%;
         }
-        100% {
+        to {
             width: 20%;
         }
     }
@@ -106,8 +106,6 @@ body {
     }
     #menu-selector:checked~#container-1 {
         display: block;
-        animation-name: opener;
-        transition: 1s linear;
         z-index: 100;
     }
     // fin del menu desplegable
@@ -118,7 +116,7 @@ body {
         display: flex;
         flex-flow: row nowrap;
         border: none;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         .card-title {
             width: 100%;
             span {
@@ -133,19 +131,25 @@ body {
         margin: 0;
     }
     .grado {
-        font-size: 1.0rem;
+        font-size: 1rem;
         line-height: 2.5rem;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         color: #777777;
     }
-    i {
+    .fas {
         opacity: 70%;
+        margin-right: 5px;
     }
     .card-img {
         width: 90%;
         border: 4px solid #09aeac;
         border-radius: 300px;
         padding: 10px;
+    }
+    .fab {
+        font-size: 3em;
+        margin: 5px 5px;
+        color: #031634;
     }
     h2 {
         font-weight: 800;
