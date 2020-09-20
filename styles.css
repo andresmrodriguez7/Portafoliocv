@@ -65,9 +65,10 @@ body #container-1 {
   padding: 20px 10px 20px 10px;
   left: 0;
   top: 0;
-  width: 23%;
+  width: 30%;
   height: 100%;
   border: 1px gray solid;
+  z-index: 50;
 }
 
 body #container-1 #menu-close {
@@ -226,5 +227,19 @@ body .progress {
 body .progress b {
   color: #000523;
   text-shadow: white;
+}
+
+@media (max-width: 575.98px) {
+  .card {
+    width: 100%;
+  }
+  .container {
+    top: 8% !important;
+    width: 10% !important;
+    z-index: 100;
+  }
+  #container-1 {
+    width: 75% !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
