@@ -1,15 +1,12 @@
 * {
-  background-color: #f9f9f9;
-}
-
-.mb-3 {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   margin: 20px auto;
   padding: 0;
-  width: 90%;
+  width: 95%;
 }
 
 body .container {
@@ -21,8 +18,9 @@ body .container {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -45,19 +43,19 @@ body #menu-selector {
 }
 
 @-webkit-keyframes opener {
-  0% {
+  from {
     width: 0%;
   }
-  100% {
+  to {
     width: 20%;
   }
 }
 
 @keyframes opener {
-  0% {
+  from {
     width: 0%;
   }
-  100% {
+  to {
     width: 20%;
   }
 }
@@ -68,9 +66,10 @@ body #container-1 {
   padding: 20px 10px 20px 10px;
   left: 0;
   top: 0;
-  width: 20%;
+  width: 23%;
   height: 100%;
   border: 1px gray solid;
+  z-index: 50;
 }
 
 body #container-1 #menu-close {
@@ -82,7 +81,7 @@ body #container-1 #menu-close i {
 }
 
 body #container-1 .eslogan-nombre {
-  margin: 80px auto;
+  margin: 60px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,11 +105,14 @@ body #container-1 .eslogan-nombre #nombre-menu {
 
 body #container-1 .eslogan-nombre #nombre-menu span {
   font-weight: 700;
+  color: #09aeac;
 }
 
 body #container-1 .eslogan-nombre p {
+  font-size: 0.8em;
   margin: 0;
   padding: 0;
+  color: #777777;
 }
 
 body #container-1 nav {
@@ -138,21 +140,17 @@ body #container-1 nav ul a li {
 body #container-1 nav ul a li:hover {
   color: green;
   padding-left: 6px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.4 s ease-in-out;
+  transition: 0.4 s ease-in-out;
 }
 
 body #menu-selector:checked ~ #container-1 {
   display: block;
-  -webkit-animation-name: opener;
-          animation-name: opener;
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
   z-index: 100;
 }
 
 body .card {
-  width: 90%;
+  width: 93%;
   padding: 15px 5%;
   margin: auto;
   display: -webkit-box;
@@ -163,6 +161,17 @@ body .card {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body .card .card-title {
+  width: 100%;
+}
+
+body .card .card-title span {
+  color: #09aeac;
+  font-weight: 700;
+  font-size: larger;
 }
 
 body hr {
@@ -171,13 +180,15 @@ body hr {
 }
 
 body .grado {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2.5rem;
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #777777;
 }
 
-body i {
+body .fas {
   opacity: 70%;
+  margin-right: 5px;
 }
 
 body .card-img {
@@ -185,6 +196,22 @@ body .card-img {
   border: 4px solid #09aeac;
   border-radius: 300px;
   padding: 10px;
+}
+
+body .fab {
+  font-size: 3em;
+  margin: 5px 5px;
+  color: #031634;
+}
+
+body h2 {
+  font-weight: 800;
+  color: #000523;
+}
+
+body h5 {
+  font-weight: 700;
+  color: black;
 }
 
 body .seccion {
@@ -195,6 +222,25 @@ body .seccion {
 
 body .progress {
   margin: 5px 0;
-  height: 20px;
+  background-color: rgba(174, 174, 174, 0.5) !important;
+}
+
+body .progress b {
+  color: #000523;
+  text-shadow: white;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+  .container {
+    top: 8% !important;
+    width: 10% !important;
+    z-index: 100;
+  }
+  #container-1 {
+    width: 75% !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
