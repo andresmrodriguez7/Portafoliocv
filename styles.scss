@@ -7,7 +7,7 @@
         margin: 20px auto;
         padding: 0;
         width: 95%;
-        // menu desplegable
+                // menu desplegable
         .container {
             position: fixed;
             display: flex;
@@ -172,6 +172,9 @@
                 color: #000523;
                 text-shadow: white;
             }
+        }
+        a{
+            text-decoration: none;
         }
     }
     
